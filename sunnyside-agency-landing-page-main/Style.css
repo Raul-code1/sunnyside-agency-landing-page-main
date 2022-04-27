@@ -1,0 +1,553 @@
+/* GENERAL STYLES  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+:root {
+    /* ### Primary */
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    /*-(graphic design text)*/
+    --Dark-blue: hsl(198, 62%, 26%);
+    /*-(photography text)*/
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    /*-(footer)*/
+    /* 
+### Neutral */
+
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-Barlow: 'Barlow', sans-serif;
+    --font-fraunces: 'Fraunces', serif;
+
+}
+
+body {
+    font-size: 18px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ***************************************************************************************************************** */
+/* HEADERS STYLES  */
+
+.sunnyside {
+    font-family: var(--font-fraunces);
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--White);
+}
+
+h1 {
+    font-family: var(--font-fraunces);
+    font-weight: 900;
+    color: var(--White);
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.arrow {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+nav a {
+    color: var(--Very-dark-desaturated-blue);
+    font-family: var(--font-Barlow);
+    padding: 20px 30px;
+}
+
+nav a:hover {
+    background-color: var(--Yellow);
+    border-radius: 32px;
+}
+
+.hamburguer {
+    z-index: 9999;
+}
+
+.hamburger-box {
+    width: 1rem;
+}
+
+
+.header {
+    min-height: 65vh;
+    background: url(./images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
+.sunny-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+nav {
+   
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--White);
+    align-items: center;
+    transform: translateX(110%);
+    transition: transform .3s ease-in-out;
+}
+
+.show-menu {
+    transform: translateX(0);
+}
+
+
+
+
+
+/* HEADER STYLES END HERE   */
+
+/* ******************************************************************************************************************************************* */
+
+/* GRID SECTION STYLES  */
+
+h3 {
+    font-family: var(--font-fraunces);
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.p {
+    font-family: var(--font-Barlow);
+    font-weight: 600;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.learn-more {
+    font-family: var(--font-fraunces);
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 20px;
+}
+
+h4 {
+    color: var(--Grayish-blue);
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: var(--font-Barlow);
+    font-weight: 600;
+
+}
+
+.clients-p {
+    color: var(--Grayish-blue);
+    font-family: var(--font-Barlow);
+    font-weight: 600;
+
+}
+
+
+.grid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 400px 300px 400px 500px 500px;
+}
+
+.egg {
+    background: url(./images/mobile/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cup {
+    background: url(./images/mobile/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.graphic-desing {
+    background: url(./images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.photography {
+    background: url(./images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.transform-your-brand,.stand-out{
+    padding: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+
+.graphic-desing,.photography{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+h4 {
+    text-align: center;
+    margin-top: 50px;
+   
+}
+
+.clients-box {
+    text-align: center;
+    line-height: 40px;
+
+}
+
+.emily,
+.thomas,
+.jennie {
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.jennie{
+    padding-bottom: 80px;
+}
+
+.clients-img {
+    border-radius: 50%;
+}
+
+/* GRID SECTION STYLES ENDS HERE   */
+
+/* ******************************************************************************************************************************************* */
+
+/* PHOTOS */
+
+.photos-grid{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+
+
+.photos1{
+    background: url(./images/mobile/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.photos2{
+    background: url(./images/mobile/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.photos3{
+    background: url(./images/mobile/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.photos4{
+    background: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* PHOTOS ENDS HERE  */
+
+
+
+/* *************************************************************************************************************************** */
+
+
+
+
+/* FOOTER STYLES */
+
+.a-s-p-c{
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+}
+.a-s-p-c a {
+    font-family: var(--font-Barlow);
+    color: var(--Dark-desaturated-cyan);
+   
+  
+}
+
+
+.social-networks-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.sunny2{
+    color: var(--Dark-desaturated-cyan);
+    font-size: 35px;
+}
+
+
+
+
+footer{
+    background-color: var(--Dark-moderate-cyan);
+    padding: 65px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+/* FOOTER STYLES ENDS  HERE  */
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:800px) {
+
+    /* HEADERS STYLES  */
+    .header{
+        background: url(./images/desktop/image-header.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sunnyside{
+
+    }
+    .hamburger{
+       transform: translateY(-500%);
+    }
+
+    nav{
+        position: relative;
+        width: 30%;
+        height: 30%;
+        background-color: transparent;
+        flex-direction: row;
+        transform: translateX(80%);
+        justify-content: space-around;
+    }
+
+    nav a{
+        color: var(--White);
+    }
+    nav a:hover{
+        background-color: var(--White);
+        color: black;
+    }
+
+    h1{
+        font-size: 50px;
+        letter-spacing: 15px;
+        padding-top: 40px;
+    }
+
+    .arrow{
+        padding-top: 50px;
+    }
+
+    /* HEADERS STYLES  ENDS HERE  */
+
+   /* GRID SECTION STYLES  */
+
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 400PX 600px;
+    }
+
+    .egg{
+        grid-column: 2/3;
+        background: url(./images/desktop/image-transform.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cup{
+        background: url(./images/desktop/image-stand-out.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .graphic-desing{
+        background: url(./images/desktop/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .photography{
+        background: url(./images/desktop/image-photography.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .transform-your-brand{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+
+    .transform-your-brand, .stand-out{
+        text-align: justify;
+        padding: 90px;
+        line-height: 30px;
+    }
+
+    .transform-your-brand h3, .stand-out h3{
+        padding-bottom: 30px;
+    }
+
+    .transform-your-brand .p, .stand-out .p{
+        padding-bottom: 30px;
+    }
+    .p{
+        font-size: 14px;
+    }
+
+    .graphic-desing, .photography{
+       padding: 80px;
+       
+    }
+
+    .graphic-desing h3, .photography h3{
+        font-size: 40px;
+    }
+
+    .graphic-desing p, .photography p{
+        font-size: 20px;
+    }
+
+    .clients{
+        padding: 120px;
+    }
+    .clients-box{
+        display:flex ;
+        justify-content: space-evenly;
+    }
+
+   /* GRID SECTION STYLES ENDS HERE  */
+
+   /* PHOTOS */
+
+     /* PHOTOS ENDS HERE */
+     .photos-grid{
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 550px;
+     }
+
+     .photos1{
+         background: url(./images/desktop/image-gallery-milkbottles.jpg);
+         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+
+     .photos2{
+        background: url(./images/desktop/image-gallery-orange.jpg);
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+    }
+
+    .photos3{
+        background: url(./images/desktop/image-gallery-cone.jpg);
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+    }
+
+    .photos4{
+        background: url(./images/desktop/image-gallery-sugarcubes.jpg);
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+    }
+
+    /* FOOTER  */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .a-s-p-c{
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    .social-networks-icons{
+        width: 30%;
+    }
+    /* FOOTER ENDS HERE */
+
+
+    
+}
+
+/* MEDIA QUERIES ENDS HERE  */
